@@ -7,6 +7,7 @@ import Artists from "./pages/Artists.jsx";
 import Piercer from "./pages/Piercer.jsx";
 import Contact from "./pages/Contact.jsx";
 import Location from "./pages/Location.jsx";
+import Admin from "./pages/Admin.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "location",
         element: <Location />,
+      },
+      {
+        path: "admin",
+        element: <Admin />,
       },
     ],
   },
