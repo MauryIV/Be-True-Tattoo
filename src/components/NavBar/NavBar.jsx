@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from '../../assets/svgs/logo.svg'
+import logo from '../../assets/svgs/logo.svg';
+import './NavBar.css';
 
 export default function NavBar() {
   const links = [
@@ -18,6 +19,10 @@ export default function NavBar() {
     <Link key={5} className="nav-link page page--active" to="/location">
       Location
     </Link>,
+    //temporary for development
+    <Link key={6} className="nav-link page page--active" to="/admin">
+      Admin
+    </Link>,
   ];
   return (
     <nav id="header" className="navbar navbar-expand-lg">
@@ -26,15 +31,15 @@ export default function NavBar() {
         <h1 id="nameTitle">
           Be True Tattoo
         </h1>
-        <div id="navbarSupportedContent">
-          <ul className="navbar-nav">
-            {links.map((link) => (
-              <li key={link.key} className="nav-item">
-                {link}
-              </li>
-            ))}
-          </ul>
-        </div>
+      </div>
+      <div id="navbarSupportedContent">
+        <ul className="navbar-nav">
+          {links.map((link) => (
+            <li key={link.key} className="nav-item">
+              {link}
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
