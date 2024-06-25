@@ -2,12 +2,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import Landing from "./pages/Landing.jsx";
-import Artists from "./pages/Artists.jsx";
-import Piercer from "./pages/Piercer.jsx";
-import Contact from "./pages/Contact.jsx";
-import Location from "./pages/Location.jsx";
-import Admin from "./pages/Admin.jsx";
+import Landing from "./pages/Landing/Landing.jsx";
+import Artists from "./pages/Artists/Artists.jsx";
+import Piercer from "./pages/Piercer/Piercer.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import Location from "./pages/Location/Location.jsx";
+import Admin from "./pages/Admin/Admin.jsx";
 
 const router = createBrowserRouter([
   {
