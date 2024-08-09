@@ -13,10 +13,14 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background: inherit; /* Ensure body background matches root */
 }
 
 h1 {
@@ -32,11 +36,13 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: #ffffff;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
+  background-color: #333;
 }
 button:focus,
 button:focus-visible {
@@ -53,5 +59,9 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    color: #000;
+  }
+  button:hover {
+    background-color: #e0e0e0;
   }
 }

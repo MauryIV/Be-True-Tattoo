@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Footer.css";
-import facebookLogo from "../../assets/svgs/facebook.svg";
-import instagramLogo from "../../assets/svgs/instagram.svg";
+import facebookLogo from "../../../assets/svgs/facebook.svg";
+import instagramLogo from "../../../assets/svgs/instagram.svg";
 
 // This array and addEmail function is a placeholder until I can get the idea of how i want to set up the CMS backend
 let subscribedEmails = [];
