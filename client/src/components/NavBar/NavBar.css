@@ -1,9 +1,17 @@
+#header {
+  position: fixed;
+  background: linear-gradient(
+    rgb(116, 128, 102) 15%,
+    rgb(181, 183, 167, .5) 83%,
+    rgb(115, 115, 115, 0) 100%);
+}
+
 .navbar {
-  color: rgb(72, 72, 72);
+  color: rgb(234, 230, 228);
   top: 0;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -21,7 +29,7 @@
 
 #nameTitle {
   flex-grow: 1;
-  margin-right : 120px;
+  margin-right: 12x;
   text-align: center;
 }
 
@@ -31,7 +39,7 @@
 
 .navbar-nav {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   width: 100%;
   padding: 0;
   list-style: none;
@@ -44,9 +52,9 @@
 
 a {
   font-weight: 500;
-  color: purple;
+  color: rgb(96, 81, 69);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: rgb(234, 230, 228);
 }

@@ -5,7 +5,7 @@ import './NavBar.css';
 export default function NavBar() {
   const links = [
     <Link key={1} className="nav-link page page--active" to="/">
-      Landing
+      Home
     </Link>,
     <Link key={2} className="nav-link page page--active" to="/artists">
       Artists
